@@ -4,11 +4,81 @@
   box-sizing: border-box;
 }
 
+/* outfit-regular */
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/src/assets/fonts/outfit-v15-latin-regular.woff2") format("woff2");
+}
+/* outfit-700 */
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/src/assets/fonts/outfit-v15-latin-700.woff2") format("woff2");
+}
+
+/* Colors */
+:root {
+  --c-slate-900: hsl(218, 44%, 22%);
+  --c-slate-500: hsl(216, 15%, 48%);
+  --c-slate-300: hsl(212, 45%, 89%);
+  --c-white: hsl(0, 0%, 100%);
+
+  --color-main-bg: var(--c-slate-300);
+  --color-text-normal: var(--c-slate-500);
+  --color-text-bold: var(--c-slate-900);
+}
+
+/* Fonts and Spacing */
+:root {
+  --fs-15: calc(15 / 16 * 1rem);
+  --fs-22: calc(22 / 16 * 1rem);
+
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-500: 40px;
+
+  --font-size-h1: var(--fs-22);
+  --font-size-p: var(--fs-15);
+}
+
+body {
+  font-family:
+    "Outfit",
+    -apple-system,
+    helvetica,
+    arial,
+    sans-serif;
+  background-color: var(--color-main-bg);
+  color: var(--color-text-normal);
+}
+
 #root {
   max-width: 1280px;
   margin-inline: auto;
-  padding: 2rem;
   text-align: center;
+}
+
+.wrapper {
+  background-color: var(--c-white);
+}
+
+.title {
+  color: var(--color-text-bold);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  line-height: 1.2;
+}
+
+p {
+  font-size: var(--font-size-p);
+  line-height: 1.4;
 }
 
 a {
