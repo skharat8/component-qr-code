@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
