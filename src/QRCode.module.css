@@ -1,0 +1,15 @@
+.wrapper {
+  width: 320px;
+  background-color: var(--c-white);
+  border-radius: 20px;
+  padding-inline: var(--spacing-200);
+  padding-block: var(--spacing-200) var(--spacing-500);
+}
+
+.textWrapper {
+  padding-inline: var(--spacing-200);
+}
+
+.image {
+  border-radius: 10px;
+}
