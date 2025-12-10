@@ -2,11 +2,11 @@
 
 This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
 
-## Overview
+Live Site URL: [QR Code](https://skharat8.github.io/component-qr-code/)
 
-![](./screenshot.jpg)
+## Screenshot
 
-Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+![](./public/screenshot.png)
 
 ## My process
 
@@ -17,3 +17,5 @@ Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 - [React](https://reactjs.org/) - JS library
 
 ### What I learned
+
+In this, I extracted styles from a Figma design file and defined CSS variables to use them in the component. I also had to figure out how to have a max width on desktop while maintaining a padding on mobile for the main wrapper. This was a basic exercise, but still useful to understand how to work with design files.
