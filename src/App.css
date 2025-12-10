@@ -1,30 +1,5 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* outfit-regular */
-@font-face {
-  font-display: swap;
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/src/assets/fonts/outfit-v15-latin-regular.woff2") format("woff2");
-}
-/* outfit-700 */
-@font-face {
-  font-display: swap;
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/src/assets/fonts/outfit-v15-latin-700.woff2") format("woff2");
-}
-
-/* Colors */
 :root {
+  /* Colors */
   --c-slate-900: hsl(218, 44%, 22%);
   --c-slate-500: hsl(216, 15%, 48%);
   --c-slate-300: hsl(212, 45%, 89%);
@@ -33,10 +8,8 @@
   --color-main-bg: var(--c-slate-300);
   --color-text-normal: var(--c-slate-500);
   --color-text-bold: var(--c-slate-900);
-}
 
-/* Fonts and Spacing */
-:root {
+  /* Fonts and Spacing */
   --fs-15: calc(15 / 16 * 1rem);
   --fs-22: calc(22 / 16 * 1rem);
 
@@ -48,49 +21,16 @@
   --font-size-p: var(--fs-15);
 }
 
-body {
-  font-family:
-    "Outfit",
-    -apple-system,
-    helvetica,
-    arial,
-    sans-serif;
-  background-color: var(--color-main-bg);
-  color: var(--color-text-normal);
-  line-height: 1.4;
-}
-
 #root {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
   text-align: center;
   padding: var(--spacing-300);
 }
 
 .title {
   color: var(--color-text-bold);
-  margin-bottom: var(--spacing-200);
-}
-
-h1 {
-  font-size: var(--font-size-h1);
-  line-height: 1.2;
-}
-
-p {
-  font-size: var(--font-size-p);
-}
-
-a {
-  text-decoration: none;
-}
-
-img,
-picture,
-svg {
-  display: block;
-  max-width: 100%;
+  margin-block-end: var(--spacing-200);
 }
